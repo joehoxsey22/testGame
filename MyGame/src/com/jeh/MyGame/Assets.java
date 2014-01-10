@@ -24,7 +24,7 @@ public class Assets {
 	public static  TextureRegion moveLeft []=new TextureRegion[4];
 	public static  TextureRegion moveUp []=new TextureRegion[4];
 	public static  TextureRegion moveDown []=new TextureRegion[4];
-	
+	//change
 	
 	
 	public static  Texture texture_female;
