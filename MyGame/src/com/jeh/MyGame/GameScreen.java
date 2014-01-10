@@ -18,6 +18,8 @@ public class GameScreen implements Screen {
 	OrthographicCamera camera;
 	SpriteBatch batch;
 	
+	Texture texture_back;
+	
 	float stateTime;
 	Random rand;
 	
