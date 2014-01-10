@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="33" height="22" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="newphotilesetir2" tilewidth="1" tileheight="1">
+  <image source="../../../../../Desktop/newphotilesetir2.png" trans="ff00ff" width="814" height="613"/>
+ </tileset>
+ <tileset firstgid="498983" name="town_sprite" tilewidth="16" tileheight="16">
+  <image source="town_sprite.png" trans="ff00ff" width="768" height="512"/>
+ </tileset>
+ <tileset firstgid="500519" name="pokemon" tilewidth="16" tileheight="16" spacing="1" margin="1">
+  <image source="pokemon_sprite.png" trans="ff00ff" width="343" height="410"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="33" height="22">
+  <data encoding="base64" compression="zlib">
+   eJztzjkRACAQA0A6RJ1FXgfAgU8igpkUpNh+zWMwEXmqQoNOPDhsOMRDggyFeBgwYREPIiLyhwsC843v
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="33" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzNlksOgjAQhl2YeAT0BL4XukWNN/AWJt5D3HgB40YjbDTqDXzexls4E6fJ2NApFHz8yRdoUjo//1DAi0qFsoUKMA9luoRtHlID6kCDxl5CD6tQxids85Ae0AcGNFYeWsSQnXMP49BMwDxI8xRr4AxstBywDuoRvo5eTC/yVkA5NOme29F7jSbLo0294JL6nUbStba1pX6nkXStbe0pjEdsP3RpPHPMwUXKwx76dACOkZsHl+x0D1eofQPujh7yyAE1oWMSD76h51k8IFV6R9g8qHcI95Elh4XmQZ0vDevx+txDlhzSSK+fVw4mdWLqmeqjVA5bYEfsM3iy1dbro1QOJ/qGXHCvfdhDkuchcPAg3WfcXK5PPA9p9a19IQkzGP9BDsXo99j+Jb/BE8sCUdY=
+  </data>
+ </layer>
+ <layer name="Tile Layer 3" width="33" height="22">
+  <data encoding="base64" compression="zlib">
+   eJzrX8LOsAQPXgrEE4GYlqAfaP4EApheboD5ewcSm95uQLenn45u2I4U78hgMVJ47KSxG0bBKBgFo2AUjIJRMAqGIgAAmEI38g==
+  </data>
+ </layer>
+</map>

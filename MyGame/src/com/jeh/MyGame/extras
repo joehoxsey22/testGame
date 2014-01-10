@@ -1,0 +1,35 @@
+texture_back = new Texture(Gdx.files.internal("menu/background.jpg"));
+		texture_back.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		sprite_back = new Sprite(texture_back);
+		sprite_back.flip(false, true);
+		
+		sheet = new Texture(Gdx.files.internal("menu/Warrior_Male.png"));
+		TextureRegion[][] temp = TextureRegion.split(sheet, pixal, pixal);
+		sheet_frames = new TextureRegion[12];
+		int index = 0;
+		for(int i = 0; i < 4; i++)	{
+			for(int j=0; j <3; j++)	{
+				sheet_frames[index++]= temp[i][j];
+			}
+		}
+		
+		for(int i = 0; i<12; i++)	{
+			sheet_frames[i].flip(false, true);
+		}
+		
+		loading_animation= new Animation(0.2F, sheet_frames);
+		
+		coolsound = Gdx.audio.newSound(Gdx.files.internal("menu/explosion.wav")); 
+		
+		
+		
+		
+		stateTime += Gdx.graphics.getDeltaTime();	//since the last frame
+		Assets.current_frame = Assets.loading_animation.getKeyFrame(stateTime, true);
+		
+		
+		 else if (Gdx.input.isTouched())	{
+			touch.set(Gdx.input.getX(), Gdx.input.getY(),0);
+			camera.unproject(touch);
+			maleX = (int)touch.x;
+			maleY = (int)touch.y;
