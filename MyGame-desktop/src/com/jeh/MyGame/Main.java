@@ -8,8 +8,8 @@ public class Main {
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = "MyGame";
 		cfg.useGL20 = true;
-		cfg.width = 1280;
-		cfg.height = 720;
+		cfg.width = 1024;
+		cfg.height = 640;
 		
 		new LwjglApplication(new MyGame(), cfg);
 	}
