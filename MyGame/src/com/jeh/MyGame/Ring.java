@@ -1,6 +1,6 @@
 package com.jeh.MyGame;
 
-public class Ring {
+public class Ring extends Bag {
 	String name;
 	int armor;
 	int hp;
@@ -21,6 +21,18 @@ public class Ring {
 		damage = d;
 		lvReq = l;
 	}
+	public void equip(Warrior war)	{
+		war.setRing(this);
+		war.update();
+	}
+	//public void equip(Mage ma)	{
+		//ma.setRing(this);
+		//war.update();
+	//}
+	//public void equip(Ranger ra)	{
+	//	ra.setRing(this);
+		//war.update();
+	//}
 	public String getName() {
 		return name;
 	}
@@ -50,5 +62,14 @@ public class Ring {
 	}
 	public void setLvReq(int lvReq) {
 		this.lvReq = lvReq;
+	}
+	public void Stats()	{
+		System.out.println("Ring");
+		System.out.println("===============================");
+		System.out.println("Name: "+name);
+		System.out.println("Hp gain: "+hp);
+		System.out.println("Armor: "+armor);
+		System.out.println("Level Requirement: "+lvReq);
+		System.out.println("===============================");
 	}
 }

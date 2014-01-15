@@ -1,6 +1,6 @@
 package com.jeh.MyGame;
 
-public class Chest {
+public class Chest extends Bag{
 	String name;
 	int armor;
 	int hp;
@@ -21,6 +21,18 @@ public class Chest {
 		damage = d;
 		lvReq = l;
 	}
+	public void equip(Warrior war)	{
+		war.setChest(this);
+		war.update();
+	}
+	//public void equip(Mage ma)	{
+		//ma.setChest(this);
+		//war.update();
+	//}
+	//public void equip(Ranger ra)	{
+	//	ra.setChest(this);
+		//war.update();
+	//}
 	public String getName() {
 		return name;
 	}
@@ -50,6 +62,15 @@ public class Chest {
 	}
 	public void setLvReq(int lvReq) {
 		this.lvReq = lvReq;
+	}
+	public void Stats()	{
+		System.out.println("Chest");
+		System.out.println("===============================");
+		System.out.println("Name: "+name);
+		System.out.println("Hp gain: "+hp);
+		System.out.println("Armor: "+armor);
+		System.out.println("Level Requirement: "+lvReq);
+		System.out.println("===============================");
 	}
 	
 	
